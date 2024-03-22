@@ -25,6 +25,7 @@ source-repository head
 
 library
   exposed-modules:
+      ClassType
       DataType
   other-modules:
       Paths_hs_courses
