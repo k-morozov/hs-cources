@@ -232,3 +232,9 @@ height (Node lhs rhs) = 1 +  on max height lhs rhs
 size :: Tree a -> Int
 size (Leaf _) = 1
 size (Node lhs rhs) = 1 + on (+) size lhs rhs
+
+sumList :: [Integer] -> Integer
+sumList = foldr (+) 0
+
+concatList :: [[a]] -> [a]
+concatList = foldr (++) []
