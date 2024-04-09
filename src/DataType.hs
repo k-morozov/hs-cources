@@ -145,9 +145,9 @@ isRectangle _ = False
 
 
 abbrFirstName :: Person -> Person
-abbrFirstName p@(Person{firstName = name})
-    | length name < 2 = p
-    | otherwise = p{firstName = take 1 name ++ "."}
+abbrFirstName p@(Person{firstName=name, lastName=surname, age=age})
+    | length name < 2 = p 
+    | otherwise = p{firstName=head name : "."}
 
 
 roots' :: Double -> Double -> Double -> Either error Roots
