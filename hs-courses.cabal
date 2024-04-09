@@ -27,6 +27,8 @@ library
   exposed-modules:
       ClassType
       DataType
+      Foldr
+      Monade
   other-modules:
       Paths_hs_courses
   autogen-modules:
